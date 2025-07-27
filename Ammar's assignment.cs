@@ -1,0 +1,13 @@
+﻿Console.WriteLine(" Welcome to: Islam's carpet service");
+Console.WriteLine("small carpet costs 25$, Larg carpet costs 35$ with 6% fee");
+Console.WriteLine(" Please enter how many small carpets you wanna wash");
+int SmallCarpet = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("And how many larg carpets?");
+int LargeCarpet = Convert.ToInt32(Console.ReadLine());
+int SmallCarpetPrice = 25;
+int LargeCarpetPrice = 35;
+int SmallCarpetTotal = SmallCarpet * SmallCarpetPrice;
+int LargeCarpetTotal = LargeCarpet * LargeCarpetPrice;
+double withoutfeeTotal = SmallCarpetTotal + LargeCarpetTotal;
+double withfeetotal =(withoutfeeTotal + 6.6);
+Console.WriteLine($"total estimate = {withfeetotal}$");
